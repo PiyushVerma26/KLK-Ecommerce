@@ -1,0 +1,106 @@
+p {
+    text-align: justify;
+}
+
+.mainAbout {
+    overflow-x: hidden;
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+
+}
+
+.imgSolar img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+.imgSolar {
+    padding: 10px;
+    width: 100vw;
+}
+
+.abouContRigh {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#aboutTitle {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    line-height: 50px;
+}
+
+#getIn {
+    align-self: flex-start;
+    text-decoration: none;
+    background-color: brown;
+    padding: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+#aboutParaGP {
+    line-height: 50px;
+    font-size: 2rem;
+}
+
+/* .qualityImage {
+    border-radius: 50%;
+    padding: 20px;
+} */
+
+.qualityImage img {
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    background-color: white;
+}
+
+@media screen and (min-width:1024px) {
+    .mainAbout {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .imgSolar {
+        flex: 1;
+    }
+
+    .abouContRigh {
+        padding: 50px;
+
+    }
+
+    .abouContRigh {
+        flex: 1;
+    }
+
+    .quality {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+
+    .qualityWork {
+        position: absolute;
+    }
+}

@@ -1,0 +1,895 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+
+
+}
+
+.topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    align-items: center;
+    color: black;
+
+    height: 48px;
+}
+
+#tagLine {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-right: 2px solid black;
+    padding: 5px;
+}
+
+#tagName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#companyName {
+    color: brown;
+    font-size: 1.2rem;
+    border-bottom: 1px dotted brown;
+    padding-bottom: 5px;
+}
+
+#tag {
+    color: rgb(0, 0, 0, 0.8);
+
+}
+
+.topContact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#userIcon {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+#Login,
+#Register {
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px 2px solid black;
+    margin-right: 10px;
+
+}
+
+#cartBtn {
+    font-size: 28px;
+    color: black;
+
+}
+
+.cart {
+    position: relative;
+}
+
+#number {
+    position: absolute;
+    bottom: 65%;
+    left: 95%;
+    color: black;
+}
+
+.navBar {
+    margin-top: 5px;
+    height: 60px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+
+.menuIcon {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    animation: zoomInOut 2s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+#icon {
+    font-size: 24px;
+    color: white
+}
+
+#menuText {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navList {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ulList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.ulList li a {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.ulList li a:hover {
+    color: black;
+    text-shadow: 1px 1px white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+
+}
+
+#contactNumber {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+
+.user {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#wel {
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+    font-family: sans-serif;
+}
+
+#userName {
+    font-size: 1.1rem;
+    color: brown;
+    text-shadow: 1px 1px black;
+}
+
+.sidelist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.social a i {
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fb {
+    background-color: #0862f7;
+    color: white;
+    text-align: center;
+}
+
+.inst {
+    background-color: #8629b8;
+    color: white;
+    text-align: center;
+}
+
+.twit {
+    background-color: #1c9cea;
+    color: white;
+    text-align: center;
+}
+
+.link {
+    background-color: #0073af;
+    color: white;
+    text-align: center;
+}
+
+
+.sidelist li a {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+.sidelist li a:hover {
+    color: brown;
+    text-shadow: 1px 1px black;
+}
+
+.sideBar {
+    position: fixed;
+    overflow-y: auto;
+    background-color: white;
+    max-height: 100vh;
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    backdrop-filter: blur(50px);
+    z-index: 1;
+}
+
+.cross {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    animation: zoomInOut 2s infinite alternate;
+}
+
+#calc img {
+    height: 40px;
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    z-index: 1;
+}
+
+
+.sideContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.socialFixed {
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    right: 0%;
+    position: fixed;
+
+    margin-right: 5px;
+    gap: 10px;
+    z-index: 1;
+}
+
+.socialFixed a i {
+    transition: all linear 100ms;
+    font-size: 24px;
+    background-color: brown;
+    min-width: 50px;
+    min-height: 50px;
+
+    padding: 10px;
+
+}
+
+.socialFixed a i:hover {
+    transform: rotate3d(1, 1, 1, 190deg);
+}
+
+
+
+.active {
+    color: black;
+    text-shadow: 1px 1px white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.icons {
+    color: white;
+}
+
+.footerContent #footList {
+    background-image: url(../images/KLK-Footer.jpg);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px;
+    overflow-x: hidden;
+
+
+}
+
+
+
+.footerContent #footList li {
+
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: white;
+
+}
+
+#footerCompany ul,
+#footerProduct ul,
+#socialCont,
+.office-Details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#textBox {
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#footerCompany ul li a,
+#footerProduct ul li a {
+    color: white;
+    font-size: 1rem;
+}
+
+#socialCont {
+    margin-top: 10px;
+}
+
+.socail-Footer a i {
+    font-size: 24px;
+    background-color: brown;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 10px;
+}
+
+.socail-Footer a i:hover {
+    transform: skew(35deg, 15deg);
+}
+
+.contact-footer {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.office-Details {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    gap: 30px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.newLetter {
+    padding: 40px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#subscribe {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1rem;
+    background-color: brown;
+    color: white;
+}
+
+.main_content::-webkit-scrollbar {
+    display: none;
+}
+
+.main_content {
+    height: 80vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+
+}
+
+.caurosel {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.box {
+
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    min-height: 35vh;
+    background-color: brown;
+    border-radius: 10px;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box:hover {
+    animation: none;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(50%);
+    }
+
+    75% {
+        transform: translateX(25%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.box p {
+    font-size: 1rem;
+    text-align: justify;
+    word-spacing: 0%;
+}
+
+.box h3 {
+    font-size: 1.1rem;
+    color: black;
+    align-self: flex-end;
+    justify-self: flex-end;
+
+}
+
+.checked {
+    color: white;
+    font-size: 18px;
+}
+
+
+.blog {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    background: fixed;
+    scroll-snap-align: start;
+    width: 100%;
+
+    overflow-x: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#seperator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px;
+}
+
+
+#title {
+    color: black;
+    font-size: 3.5rem;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-left: 65px;
+}
+
+#red {
+    position: relative !important;
+    width: 50%;
+    height: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#red img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}
+
+
+#blogText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#blogText h3 {
+    text-shadow: 1px 1px black;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: brown;
+}
+
+#descrip {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: black;
+}
+
+#date {
+    font-size: 1rem;
+    color: black;
+}
+
+#imageContains {
+    position: absolute;
+    height: 150px;
+    top: 85%;
+    left: 36%;
+    width: 250px;
+    border: 2px solid whitesmoke;
+    animation: zoomInOut 2s infinite alternate-reverse;
+}
+
+#imageContains img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .footerContent #footList {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    #title {
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+
+    /* .overlay {
+        height: 90vh;
+    } */
+
+    .newLetter {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .copyright {
+        gap: 5px;
+        font-size: 0.6rem;
+    }
+
+    #subscribe {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    #join {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footerContent #footList {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .blog {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #title {
+        margin-left: 20px;
+    }
+
+    /* 
+    .youtube {
+        width: 300px;
+        height: 300px;
+
+    } */
+
+
+
+
+
+    #footerCompany ul,
+    #footerProduct ul,
+    #socialCont,
+    .office-Details {
+        gap: 10px;
+    }
+
+    .socail-Footer a i {
+        font-size: 20px;
+        min-width: 30px;
+        min-height: 30px;
+        padding: 8px;
+    }
+
+    .contact-footer {
+        font-size: 1rem;
+        gap: 10px;
+    }
+
+    .office-Details {
+        font-size: 1rem;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footerContent #footList {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    /* .rel {
+        font-size: .8rem;
+    } */
+
+    #our {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .navList {
+        display: none;
+    }
+
+    .blog {
+        height: auto;
+    }
+
+    #seperator {
+        flex-direction: column;
+    }
+
+    #red {
+        width: 100%;
+        margin: 0%;
+        height: 200px;
+    }
+
+    #blogText {
+        width: 100%;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    #blogText h3 {
+        font-size: 1rem;
+        padding: 3px;
+        margin-top: 10px;
+    }
+
+    #descrip {
+        font-size: 0.8rem;
+
+    }
+
+    #date {
+        align-self: flex-end;
+        margin-top: -20px;
+    }
+
+    #imageContains {
+        position: relative;
+        inset: 0;
+        margin-top: -40px;
+        margin-right: 10px;
+        height: 80px;
+        width: 120px;
+        align-self: flex-end;
+
+    }
+
+
+
+    .box {
+        max-width: 230px;
+        max-height: 250px;
+
+        overflow: scroll;
+    }
+
+    .box p {
+        font-size: .7rem;
+    }
+
+    #title {
+        margin-left: 20px;
+    }
+
+    .box h3 {
+        font-size: .8rem;
+    }
+
+    .newLetter {
+        flex-direction: column;
+    }
+
+    .socialFixed {
+        display: none;
+    }
+
+    #Login,
+    #Register {
+        margin-left: 10px;
+    }
+
+    .navBar {
+        justify-content: space-between !important;
+        margin: 0%;
+        overflow-x: hidden;
+    }
+
+    .menuIcon {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    #contactNumber {
+        margin-right: 20px;
+    }
+
+    .sideBar {
+        width: 100% !important;
+
+        border: none;
+        animation: directionInX 1s;
+    }
+
+    .topBar {
+        display: none;
+    }
+
+    .footerContent #footList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@keyframes directionInX {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.rel {
+    font-size: 3rem;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}

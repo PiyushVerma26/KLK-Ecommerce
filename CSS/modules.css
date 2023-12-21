@@ -1,0 +1,145 @@
+#solar {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.abouContRigh {
+    gap: 10px !important;
+}
+
+#productTitl {
+    font-size: 2rem;
+    align-self: flex-start;
+}
+
+.addtoCartModule {
+    text-decoration: none;
+    align-self: flex-start;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.val p {
+    margin-left: 5px;
+    color: brown;
+}
+
+.val {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cost p {
+    font-weight: bold;
+}
+
+.cost {
+    align-self: flex-start;
+    gap: 10px;
+}
+
+.carty {
+    padding-right: 5px;
+}
+
+.deliveryStatus {
+    align-self: flex-start;
+}
+
+.rate {
+    color: brown;
+}
+
+.unchcked {
+    color: rgb(179, 95, 239);
+
+}
+
+.forMod {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+.provided {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+
+.provided button {
+    padding: 10px;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.truck {
+    margin-right: 5px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.selectMod {
+    align-self: flex-start;
+}
+
+#slectModule {
+    background-color: rgb(206, 241, 241);
+    padding: 6px;
+    font-size: 1rem;
+}
+
+#slectModule option {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+
+.quantityHandle {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantityHandle button {
+    padding: 10px;
+    font-size: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.quantityHandle input {
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:368px) {
+
+    #productTitl {
+        font-size: 1.2rem;
+    }
+
+    .forMod {
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+
+    .provided button {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,82 @@
+.csr-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.csr-section h1 {
+
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.impact {
+    margin-bottom: 10px;
+}
+
+.csr-section p {
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Pillar Styles */
+.pillar {
+    margin-bottom: 40px;
+}
+
+.pillar h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.pillar p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.pillar-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .csr-section {
+        padding: 20px;
+    }
+
+    .csr-section h1 {
+        font-size: 30px;
+    }
+
+    .csr-section p {
+        font-size: 16px;
+    }
+
+    .pillar h2 {
+        font-size: 24px;
+    }
+
+    .pillar p {
+        font-size: 14px;
+    }
+}

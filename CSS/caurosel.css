@@ -1,0 +1,197 @@
+.caurosel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: url(../images/caurosel/solar.jpeg);
+}
+
+.imageCaurosel {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    animation: cauroselAnime 4s 1 alternate forwards;
+    top: 0;
+}
+
+#imgCa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentCau {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+
+
+}
+
+.overlayCaur {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(247, 243, 243, 0.3), rgba(0, 0, 0, 0.4));
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.contentCau h1 {
+
+    color: white;
+    animation: backgroundText 4s ease-in-out 1 alternate forwards;
+    text-shadow: 1px 1px rgba(0, 0, 0);
+    font-size: 3rem;
+}
+
+
+
+@keyframes cauroselAnime {
+    from {
+
+        transform: scale(1.2)
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes backgroundText {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%) scale(0.5);
+    }
+
+    25% {
+        opacity: 0.5;
+        transform: translateY(-100%) scale(0.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-60%) scale(0.9);
+    }
+
+    85% {
+        opacity: 1;
+        transform: translateY(-25%) scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes backgroundP {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%) scale(0.5);
+    }
+
+    25% {
+        opacity: 0.5;
+        transform: translateX(-100%) scale(0.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-60%) scale(1);
+    }
+
+    85% {
+        opacity: 0.7;
+        transform: translateX(-25%) scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+#connect {
+    background-color: brown;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    animation: cauroselAnime 4s 1 alternate forwards;
+    /* margin: 20px auto; */
+    width: 10rem;
+    margin-top: 20px;
+}
+
+
+
+.contentCau p {
+    font-size: 1.5rem;
+    animation: backgroundP 3s ease-in-out 1 alternate forwards;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 40px;
+    text-align: justify;
+    color: white;
+    padding: 10px;
+
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+    .contentCau {
+        text-align: center;
+        width: 90%;
+        left: 50%;
+    }
+
+    .contentCau p {
+        text-align: initial;
+    }
+
+    #connect {
+        margin: 20px auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentCau {
+        width: 100%;
+    }
+
+    .contentCau h1 {
+        font-size: 2rem;
+    }
+
+    .contentCau p {
+        font-size: 1.2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.caurosel:hover .arrow {
+    opacity: 1;
+}
+
+#connect:hover {
+    background-color: black;
+    color: white;
+}

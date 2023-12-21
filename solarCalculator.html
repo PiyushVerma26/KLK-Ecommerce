@@ -1,0 +1,126 @@
+<style>
+    /* Common styles */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Section styles */
+    .owner-description {
+        overflow: hidden;
+        background-color: #FFFFFF;
+        color: #000000;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Owner Info styles */
+    .owner-info {
+        text-align: center;
+    }
+
+    .owner-name {
+        color: #3E2723;
+        margin-bottom: 10px;
+        font-size: 2em;
+        /* Larger font size for the name */
+    }
+
+    .owner-role {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        /* Increased font size */
+    }
+
+    /* Owner Image styles */
+    .owner-image img {
+        max-width: 100%;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        width: 300px;
+        /* Adjusted image width */
+    }
+
+    /* Bio Text styles */
+    .bio-text {
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 1em;
+        /* Standard font size */
+    }
+
+    /* Owner Social styles */
+    .owner-social {
+        margin-top: 30px;
+    }
+
+    .social-heading {
+        color: #3E2723;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        /* Increased font size */
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .social-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #3E2723;
+        line-height: 40px;
+        transition: background-color 0.3s ease;
+    }
+
+    .social-icon:hover {
+        background-color: #000000;
+    }
+
+    .social-icon i {
+        color: #FFFFFF;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Media query for responsiveness */
+    @media screen and (max-width: 768px) {
+        .owner-image img {
+            max-width: 70%;
+            width: auto;
+            /* Adjusted image width */
+        }
+
+        .owner-description {
+            padding: 20px;
+            /* Increased padding for smaller screens */
+        }
+
+        .owner-name {
+            font-size: 1.5em;
+            /* Adjusted font size for smaller screens */
+        }
+
+        .owner-role,
+        .social-heading,
+        .bio-text {
+            font-size: 1em;
+            /* Adjusted font size for smaller screens */
+        }
+    }
+</style>

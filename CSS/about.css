@@ -1,0 +1,269 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    background: linear-gradient(to right, red, white);
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#leftSideTitle {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding-left: 10px;
+
+}
+
+#years {
+    height: 100px;
+    background-color: rgb(174, 0, 0);
+
+    width: 90%;
+    margin-left: -10px;
+
+}
+
+/* #thirty {
+    font-size: 8rem;
+} */
+#detail {
+    line-height: 30px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    text-align: justify;
+    color: black;
+
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 50%;
+}
+
+.vision h3,
+.mission h3,
+.bottom_values h3 {
+    font-size: 2rem;
+    padding: 10px;
+
+}
+
+.equal {
+    flex: 1;
+    padding: 5px;
+}
+
+.vision p,
+.mission p,
+.bottom_values p {
+    font-size: 1.1rem;
+    padding: 10px;
+
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.vision,
+.mission {
+    z-index: .9;
+    width: 300px;
+    text-align: justify;
+    background-color: #afcef9;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.vision,
+.mission,
+.bottom_values {
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.vision img,
+.mission img {
+    width: 100%;
+    height: 250px;
+}
+
+.bottom_values {
+    background-color: rgb(61, 42, 165);
+    line-height: 30px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.why {
+
+    height: 100vh;
+    background: url(../images/solarAbout.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* margin: 10px;
+   
+    /* margin-bottom: 20px; */
+    background-attachment: fixed;
+
+    border: 1 px solid white;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.3), inset 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+#whyTitle {
+
+    border-right: 2px solid black;
+    text-shadow: 1px 1px white;
+    font-size: 2.2rem;
+    line-height: auto;
+    margin-left: 10px;
+    color: black;
+    flex: 1;
+    margin-right: 10px;
+}
+
+#whyContent {
+    flex: 2;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#whyPara {
+    line-height: 40px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    color: white;
+    /* text-shadow: 1px 1px black; */
+    /* margin-top: 10px; */
+}
+
+#advnatage {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+#advantageTitle {
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+#subPoints {
+    margin-top: 10px;
+    color: black;
+    margin-left: 20px;
+}
+
+#subPoints li {
+    color: rgba(0, 0, 0, );
+    font-size: 1.1rem;
+    line-height: 40px;
+    list-style: disc;
+
+}
+
+
+
+@media screen and (max-width:1200px) {
+    #detail {
+        line-height: 20px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    #years {
+        margin-top: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .top {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .bottom_values {
+        margin-top: -11px;
+
+    }
+
+    #leftSideTitle {
+        font-size: 2rem;
+    }
+
+    .rightSide {
+        width: 100%;
+    }
+
+    .why {
+        margin: 0%;
+        height: auto;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    #whyTitle {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    #whyPara {
+        line-height: 20px;
+        font-size: 1rem;
+
+        text-align: justify;
+        margin: 0%;
+        margin: 10px;
+    }
+
+    #advnatage {
+        margin: 0%;
+        margin: 10px;
+        padding: 0%;
+    }
+
+    #advantageTitle {
+        font-size: 1.2rem;
+    }
+
+    #subPoints li {
+        line-height: 25px;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width : 400px) {
+    #whyTitle {
+        font-size: 1.5rem;
+        border-right: none;
+
+    }
+}
