@@ -128,14 +128,14 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width:368px) {
+@media screen and (max-width:768px) {
 
     #productTitl {
         font-size: 1.2rem;
     }
 
     .forMod {
-        padding-left: 0% !important;
+        padding-left: 10px !important;
         padding-right: 0% !important;
     }
 

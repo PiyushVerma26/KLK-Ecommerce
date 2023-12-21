@@ -269,7 +269,7 @@
     position: fixed;
     overflow-y: auto;
     background-color: white;
-    max-height: 100vh;
+    height: 100vh;
     display: none;
     flex-direction: column;
     width: 300px;
@@ -811,8 +811,6 @@
         align-self: flex-end;
 
     }
-
-
 
     .box {
         max-width: 230px;
