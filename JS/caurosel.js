@@ -41,7 +41,7 @@ function setCaurosel() {
   const cauroselAppend = document.querySelector(".caurosel");
   const cauroselHtml = ` 
         <div class="imageCaurosel">
-            <img src="../images/caurosel/${items.src}" id="imgCa">
+            <img src="./images/caurosel/${items.src}" id="imgCa">
         </div>
         <div class="contentCau">
             <h1>${items.title}</h1>
@@ -49,7 +49,6 @@ function setCaurosel() {
             <a href="contact.html" id="connect">Connect With Us</a>
         </div>
         <div class="overlayCaur"></div>
-        
         `;
   cauroselAppend.innerHTML = cauroselHtml;
   currentValue++;
