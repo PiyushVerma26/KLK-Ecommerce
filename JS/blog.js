@@ -58,7 +58,7 @@ function mainDivupdate(index) {
                     frameborder="0" ></iframe>
             </div>
             <div class="media-content media-contentR">
-                <h3>${blogSrc[index].title}</h3>
+                <h3 id="ytbTi">${blogSrc[index].title}</h3>
             </div>`;
   mainYoutube.innerHTML = texty;
 }
