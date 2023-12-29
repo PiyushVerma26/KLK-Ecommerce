@@ -1,0 +1,108 @@
+.testimonial-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          gap: 25px;
+          background-color: #fcfafa;
+}
+
+.testimonial_Title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 40px;
+          min-height: 100vh;
+          background-color: #fcfafa;
+}
+
+#testi {
+          padding-top: 20px;
+          font-size: 2.5rem;
+          margin-bottom: 10px;
+}
+
+#whats {
+          text-wrap: wrap;
+          text-align: center;
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+          padding: 10px;
+          color: brown;
+}
+
+.testimonial {
+          width: 80%;
+          min-width: 300px;
+          border-radius: 10px;
+          min-height: 450px;
+          overflow: hidden;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          margin-bottom: 30px;
+}
+
+.testimonial-content {
+          padding: 20px;
+          min-height: 300px;
+          background-color: #fff;
+}
+
+.testimonial-content p {
+          text-align: justify;
+
+          color: #444;
+          font-size: 1.1rem;
+          line-height: 1.5;
+          margin: 0;
+}
+
+.testimonial-author {
+          display: flex;
+          align-items: center;
+          padding: 15px;
+          background: linear-gradient(to right, white, brown);
+}
+
+.testimonial-author img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-right: 15px;
+}
+
+.author-info h3 {
+          margin: 5px 0 0;
+          color: #333;
+}
+
+.author-info span {
+          font-size: 14px;
+          color: white;
+}
+
+@media screen and (max-width: 1000px) {
+          .testimonial-container {
+                    flex-direction: column;
+                    align-items: stretch;
+          }
+
+          #whats {
+                    font-size: 1.8rem;
+                    padding: 10px;
+                    margin: 0;
+          }
+
+          .testimonial_Title {
+                    padding: 0;
+
+                    width: 100%;
+          }
+
+          .testimonial {
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin-bottom: 20px;
+          }
+}

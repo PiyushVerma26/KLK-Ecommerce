@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Cost Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="text"],
+        .container input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Solar Cost Calculator</h1>
+        <form action="/calculate-solar-cost" method="post">
+            <input type="text" name="project_type" placeholder="Project Type" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <input type="text" name="system_type" placeholder="System Type" required>
+            <input type="number" name="system_size" placeholder="System Size (kW)" step="0.01" required>
+            <input type="submit" value="Calculate Cost">
+        </form>
+    </div>
+
+
+    <script>
+        function calculateCost(projectType, location, systemType, systemSize) {
+            var costPerKw = 3.50;
+            var totalCost = systemSize * costPerKw;
+            return totalCost;
+        }
+
+        document.querySelector('.container form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var projectType = event.target.project_type.value;
+            var location = event.target.location.value;
+            var systemType = event.target.system_type.value;
+            var systemSize = parseFloat(event.target.system_size.value);
+            var totalCost = calculateCost(projectType, location, systemType, systemSize);
+            document.querySelector('.container').innerHTML += `<p>The estimated cost of your solar project is: Rupee    ${totalCost.toFixed(2)}</p>`;
+        });
+    </script>
+</body>
+
+</html> -->

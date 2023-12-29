@@ -11,7 +11,6 @@ p {
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
-
 }
 
 .imgSolar img {
@@ -38,7 +37,7 @@ p {
 
 #aboutTitle {
     font-size: 2.5rem;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     line-height: 50px;
 }
 
@@ -58,11 +57,6 @@ p {
     font-size: 2rem;
 }
 
-/* .qualityImage {
-    border-radius: 50%;
-    padding: 20px;
-} */
-
 .qualityImage img {
     border-radius: 50%;
     height: 110px;
@@ -70,7 +64,14 @@ p {
     background-color: white;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (max-width: 768px) {
+    #aboutTitle {
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .mainAbout {
         flex-direction: row;
         gap: 20px;
@@ -82,7 +83,6 @@ p {
 
     .abouContRigh {
         padding: 50px;
-
     }
 
     .abouContRigh {

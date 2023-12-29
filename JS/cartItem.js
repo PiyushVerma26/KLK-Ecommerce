@@ -61,7 +61,6 @@ function displayCartItems() {
 displayCartItems();
 
 function removeFromCart(index) {
-  console.log("removed" + index);
   let cartItems = JSON.parse(localStorage.getItem("Data"));
 
   if (index !== -1) {

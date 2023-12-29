@@ -28,7 +28,6 @@
 }
 
 .val {
-
     display: flex;
     flex-direction: row;
 }
@@ -56,7 +55,6 @@
 
 .unchcked {
     color: rgb(179, 95, 239);
-
 }
 
 .forMod {
@@ -128,8 +126,7 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
     #productTitl {
         font-size: 1.2rem;
     }

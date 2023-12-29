@@ -1,0 +1,116 @@
+.CompanyDes {
+   padding: 70px;
+   height: 100vh;
+   background-color: rgb(246, 246, 242);
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+   align-items: flex-end;
+}
+
+.disclamer {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: flex-start;
+}
+
+#klkSuccess {
+   font-size: 3rem;
+   width: 50%;
+}
+
+.disclamer p {
+   width: 80%;
+   font-size: 1.2rem;
+   line-height: 30px;
+}
+
+#Explore {
+   background-color: brown;
+   padding: 15px;
+   border-radius: 5px;
+   color: white;
+   text-decoration: none;
+}
+
+
+.WhyItemImage {
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   padding: 2vw;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+   background-color: white;
+   border: 2px double black;
+}
+
+.WhyItemImage img {
+   height: 100%;
+   width: 100%;
+}
+
+.whyChoose {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding-right: 40px;
+   height: 100%;
+}
+
+@media screen and (max-width:1024px) {
+   .CompanyDes {
+      flex-direction: column;
+      height: auto;
+      gap: 25px;
+      padding: 15px;
+      align-items: center;
+   }
+
+   #klkSuccess {
+      font-size: 2rem;
+      width: 100%;
+   }
+
+   .disclamer p {
+      width: 100%;
+   }
+
+   .whyChoose {
+      height: auto;
+      padding: 0%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      width: 100%;
+      justify-content: space-around;
+   }
+
+}
+
+@media screen and (max-width:768px) {
+   #klkSuccess {
+      font-size: 1.6rem;
+
+   }
+
+   #Explore {
+      align-self: center;
+   }
+
+
+
+   .WhyItemImage {
+      width: 100px;
+      height: 100px;
+   }
+}
+
+@media screen and (max-width:468px) {
+   .WhyItemImage {
+      width: 80px;
+      height: 80px;
+   }
+}

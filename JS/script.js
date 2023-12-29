@@ -1,10 +1,8 @@
 import { cartItemLength } from "./IncreDecre.js";
-
 const menuOpen = document.getElementById("icon");
 const siderBar = document.getElementById("side");
 const navBar = document.querySelector(".navBar");
 const cross = document.querySelector(".cross");
-
 menuOpen.addEventListener("click", () => {
   siderBar.style.display = "flex";
   navBar.style.display = "none";

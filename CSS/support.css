@@ -47,7 +47,7 @@
     transform: rotate(45deg);
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
     .faq-container {
         margin: 10px;
     }

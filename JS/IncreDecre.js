@@ -9,12 +9,10 @@ export function handleMinusClick(number) {
   } else {
     number = 0;
   }
-
   return number;
 }
 
 export function handleCartClick(quantity, Amount, Name) {
-  console.log("clicked");
   if (quantity === 0 || Amount <= 0 || Name === "Select Module") {
     if (quantity === 0) {
       alert("Please Set Quantity");
@@ -42,15 +40,12 @@ export function cartItemLength() {
       if (Array.isArray(parsedData)) {
         return parsedData.length;
       } else {
-        console.error("Data in localStorage is not an array");
         return 0;
       }
     } catch (error) {
-      console.error("Error parsing JSON:", error);
       return 0;
     }
   } else {
-    console.error("No data found in localStorage for 'Data'");
     return 0;
   }
 }

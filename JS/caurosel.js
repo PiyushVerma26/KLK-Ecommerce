@@ -53,14 +53,14 @@ function setCaurosel() {
   cauroselAppend.innerHTML = cauroselHtml;
   currentValue++;
 }
-function prevSlide() {
-  currentValue = (currentValue - 1 + caurosel.length) % caurosel.length;
-  setCaurosel();
-}
+// function prevSlide() {
+//   currentValue = (currentValue - 1 + caurosel.length) % caurosel.length;
+//   setCaurosel();
+// }
 
-function nextSlide() {
-  currentValue = (currentValue + 1) % caurosel.length;
-  setCaurosel();
-}
+// function nextSlide() {
+//   currentValue = (currentValue + 1) % caurosel.length;
+//   setCaurosel();
+// }
 setCaurosel();
-setInterval(setCaurosel, 6000);
+setInterval(setCaurosel, 7000);

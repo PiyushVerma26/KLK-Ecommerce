@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+
     position: relative;
     background: url(../images/caurosel/solar.jpeg);
 }
@@ -17,7 +18,7 @@
 #imgCa {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .contentCau {
@@ -30,9 +31,6 @@
     left: 35%;
     transform: translate(-50%, -50%);
     color: white;
-
-
-
 }
 
 .overlayCaur {
@@ -45,19 +43,15 @@
 }
 
 .contentCau h1 {
-
     color: white;
     animation: backgroundText 4s ease-in-out 1 alternate forwards;
     text-shadow: 1px 1px rgba(0, 0, 0);
     font-size: 3rem;
 }
 
-
-
 @keyframes cauroselAnime {
     from {
-
-        transform: scale(1.2)
+        transform: scale(1.2);
     }
 
     to {
@@ -134,25 +128,18 @@
     margin-top: 20px;
 }
 
-
-
 .contentCau p {
     font-size: 1.5rem;
     animation: backgroundP 3s ease-in-out 1 alternate forwards;
     letter-spacing: 1px;
     word-spacing: 1px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: justify;
     color: white;
     padding: 10px;
-
 }
 
-
-
 @media (max-width: 1200px) {
-
-
     .contentCau {
         text-align: center;
         width: 90%;

@@ -2,12 +2,31 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: ceraPro, serif;
     list-style: none;
     text-decoration: none;
     cursor: pointer;
+    hyphens: auto !important;
 
+    letter-spacing: 0.5px;
+}
 
+@font-face {
+    font-family: ceraPro;
+    src: url(../Cera_Font/Cera\ Pro\ Bold.otf) format('openType');
+}
+
+.story {
+    color: brown;
+}
+
+.under {
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+    display: inline-block;
 }
 
 .topBar {
@@ -17,7 +36,6 @@
     padding: 5px;
     align-items: center;
     color: black;
-
     height: 48px;
 }
 
@@ -50,7 +68,6 @@
 
 #tag {
     color: rgb(0, 0, 0, 0.8);
-
 }
 
 .topContact {
@@ -73,13 +90,11 @@
     border-radius: 5px;
     border: 2px 2px solid black;
     margin-right: 10px;
-
 }
 
 #cartBtn {
     font-size: 28px;
     color: black;
-
 }
 
 .cart {
@@ -104,7 +119,6 @@
     text-transform: uppercase;
 }
 
-
 .menuIcon {
     display: none;
     flex-direction: row;
@@ -116,7 +130,6 @@
 @keyframes zoomInOut {
     0% {
         transform: scale(1);
-
     }
 
     100% {
@@ -126,12 +139,12 @@
 
 #icon {
     font-size: 24px;
-    color: white
+    color: white;
 }
 
 #menuText {
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .navList {
@@ -157,11 +170,17 @@
 }
 
 .ulList li a:hover {
-    color: black;
-    text-shadow: 1px 1px white;
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
+    /* color: black; */
+    /* text-shadow: 1px 1px white; */
+    /* border-bottom: 2px solid white; */
+    /* border-top: 2px solid black; */
+    border-bottom: 3px solid black;
+    padding: 10px;
+}
 
+.navActive {
+    border-bottom: 3px solid black;
+    padding: 10px;
 }
 
 #contactNumber {
@@ -173,7 +192,6 @@
     font-weight: 500;
     border: 1px solid black;
 }
-
 
 .user {
     margin-top: 40px;
@@ -212,7 +230,6 @@
 }
 
 .social {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -252,12 +269,10 @@
     text-align: center;
 }
 
-
 .sidelist li a {
     font-size: 1.2rem;
     color: black;
     font-weight: bold;
-
 }
 
 .sidelist li a:hover {
@@ -295,7 +310,6 @@
     z-index: 1;
 }
 
-
 .sideContact {
     display: flex;
     flex-direction: row;
@@ -322,14 +336,11 @@
     min-height: 50px;
 
     padding: 10px;
-
 }
 
 .socialFixed a i:hover {
     transform: rotate3d(1, 1, 1, 190deg);
 }
-
-
 
 .active {
     color: black;
@@ -346,7 +357,6 @@
     align-items: center;
 
     position: relative;
-
 }
 
 .icons {
@@ -360,18 +370,12 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 30px;
     overflow-x: hidden;
-
-
 }
 
-
-
 .footerContent #footList li {
-
     font-size: 1.3rem;
     margin-top: 10px;
     color: white;
-
 }
 
 #footerCompany ul,
@@ -449,7 +453,6 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-
 }
 
 #subscribe {
@@ -469,8 +472,6 @@
     height: 80vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-
-
 }
 
 .caurosel {
@@ -482,11 +483,9 @@
     font-size: 2em;
     background-color: #f0f0f0;
     border-bottom: 1px solid #ccc;
-
 }
 
 .box {
-
     flex: 0 0 auto;
     box-sizing: border-box;
     border: 1px solid #ddd;
@@ -504,7 +503,6 @@
 
 .box:hover {
     animation: none;
-
 }
 
 @keyframes slide {
@@ -533,8 +531,6 @@
     }
 }
 
-
-
 .box p {
     font-size: 1rem;
     text-align: justify;
@@ -546,7 +542,6 @@
     color: black;
     align-self: flex-end;
     justify-self: flex-end;
-
 }
 
 .checked {
@@ -554,50 +549,50 @@
     font-size: 18px;
 }
 
-
 .blog {
-    height: 100vh;
+    background-color: rgb(205, 209, 209, 0.1);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 5px;
-    background: fixed;
-    scroll-snap-align: start;
+    justify-content: center;
     width: 100%;
-
     overflow-x: hidden;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 #seperator {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     justify-content: space-evenly;
     width: 100%;
-    margin: 10px;
 }
-
 
 #title {
     color: black;
     font-size: 3.5rem;
     padding: 10px;
-    text-align: center;
     font-family: sans-serif;
-    letter-spacing: 2px;
-    margin-left: 65px;
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 3px solid black;
 }
 
 #red {
     position: relative !important;
     width: 50%;
-    height: 600px;
+    height: 500px;
     background-color: #fff;
     padding: 20px;
     box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
+    margin-top: 10px;
 }
 
 #red img {
@@ -607,32 +602,36 @@
     height: 100%;
 }
 
-
 #blogText {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: end;
+    margin-bottom: 20px;
     justify-content: flex-end;
-    gap: 20px;
+    align-self: flex-end;
+    gap: 10px;
 }
 
 #blogText h3 {
-    text-shadow: 1px 1px black;
-    font-size: 3rem;
+    /* text-shadow: 1px 1px black; */
+    font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: brown;
 }
 
 #descrip {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    /* line-height: 30px; */
     text-align: justify;
     color: black;
 }
 
 #date {
+    margin-top: 10px;
     font-size: 1rem;
+    font-weight: 800;
     color: black;
 }
 
@@ -652,26 +651,18 @@
     object-fit: cover;
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 480px) {
     .footerContent #footList {
         grid-template-columns: 1fr;
         padding: 15px;
     }
 
+
+
     #title {
         font-size: 2rem;
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
-
-    /* .overlay {
-        height: 90vh;
-    } */
 
     .newLetter {
         flex-direction: column;
@@ -699,14 +690,26 @@
         padding: 20px;
     }
 
-    .blog {
-        margin: 0%;
-        padding: 0%;
+    #thirty {
+        font-size: 1.2rem;
     }
 
-    #title {
-        margin-left: 20px;
+    #date {
+        margin-top: 10px;
+        padding-top: 10px;
     }
+
+
+    /* #descrip {
+
+        line-height: 25px;
+    } */
+
+
+
+    /* #title {
+        margin-left: 20px;
+    } */
 
     /* 
     .youtube {
@@ -714,10 +717,6 @@
         height: 300px;
 
     } */
-
-
-
-
 
     #footerCompany ul,
     #footerProduct ul,
@@ -744,20 +743,17 @@
     }
 }
 
+
+
 @media only screen and (max-width: 480px) {
     .footerContent #footList {
         grid-template-columns: 1fr;
         padding: 15px;
     }
 
-    /* .rel {
-        font-size: .8rem;
-    } */
-
     #our {
         font-size: 2rem;
     }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -767,22 +763,27 @@
 
     .blog {
         height: auto;
+        margin: 0%;
+        padding: 0%;
+
     }
 
     #seperator {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     #red {
         width: 100%;
-        margin: 0%;
+
         height: 200px;
     }
 
     #blogText {
         width: 100%;
         align-items: start;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     #blogText h3 {
@@ -792,8 +793,8 @@
     }
 
     #descrip {
-        font-size: 0.8rem;
-
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
 
     #date {
@@ -809,7 +810,6 @@
         height: 80px;
         width: 120px;
         align-self: flex-end;
-
     }
 
     .box {
@@ -820,15 +820,15 @@
     }
 
     .box p {
-        font-size: .7rem;
+        font-size: 0.7rem;
     }
 
-    #title {
+    /* #title {
         margin-left: 20px;
-    }
+    } */
 
     .box h3 {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .newLetter {
@@ -888,6 +888,9 @@
 .rel {
     font-size: 3rem;
     padding: 20px;
+    border-bottom: 3px solid black;
     font-family: sans-serif;
     text-align: center;
+    display: inline-block;
+    margin: 0 auto;
 }

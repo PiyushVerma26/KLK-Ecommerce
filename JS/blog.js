@@ -46,12 +46,13 @@ mediaItem.forEach((items, index) => {
   items.addEventListener("click", (e) => {
     e.preventDefault();
     mainDivupdate(index);
+    const mainYoutube = document.querySelector(".mainYoutube");
+    mainYoutube.scrollIntoView({ behavior: "smooth" });
   });
 });
 
 let index = 0;
 function mainDivupdate(index) {
-  console.log(index);
   const mainYoutube = document.querySelector(".mainYoutube");
   const texty = `<div class="full-Screen">
                 <iframe width="100%" height="100%" src="${blogSrc[index].src}"

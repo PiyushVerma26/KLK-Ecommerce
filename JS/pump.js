@@ -36,7 +36,7 @@ if (result > 0) {
 
 function handleSelectChange(event) {
   let value = event.target.value;
-  console.log(value);
+
   if (value === "1") {
     cost.innerText = "10000";
     Amount = 10000;
@@ -59,7 +59,6 @@ function handleSelectChange(event) {
 }
 
 pumpCart.addEventListener("click", () => {
-  console.log("clicked");
   let quantity = parseInt(quantityPump.value, 10);
   let outPut = handleCartClick(quantity, Amount, Name);
   if (outPut == true) {

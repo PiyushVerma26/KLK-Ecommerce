@@ -16,7 +16,7 @@ let Amount = 0;
 let Name = "";
 function handleSelectChange(event) {
   let value = event.target.value;
-  console.log(value);
+
   if (value === "Poly") {
     cost.innerText = "20000";
     Amount = 20000;
