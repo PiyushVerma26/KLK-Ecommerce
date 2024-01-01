@@ -59,4 +59,4 @@ function setProducts() {
 
 setProducts();
 
-setInterval(setProducts, 8000);
+setInterval(setProducts, 10000);

@@ -36,7 +36,7 @@
 .overlayCaur {
     position: absolute;
     top: 0;
-    background: linear-gradient(rgba(247, 243, 243, 0.3), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(rgba(247, 243, 243, 0.1), rgba(0, 0, 0, 0.1));
     height: 100vh;
     object-fit: cover;
     width: 100%;
@@ -44,8 +44,9 @@
 
 .contentCau h1 {
     color: white;
-    animation: backgroundText 4s ease-in-out 1 alternate forwards;
-    text-shadow: 1px 1px rgba(0, 0, 0);
+    animation: backgroundP 2s ease-in-out 1 alternate forwards;
+    /* animation: backgroundText 4s ease-in-out 1 alternate forwards; */
+    /* text-shadow: 1px 1px rgba(0, 0, 0); */
     font-size: 3rem;
 }
 
@@ -89,27 +90,28 @@
 @keyframes backgroundP {
     0% {
         opacity: 0;
-        transform: translateX(-200%) scale(0.5);
+
+        /* transform: translateX(-200%) scale(0.5); */
     }
 
     25% {
         opacity: 0.5;
-        transform: translateX(-100%) scale(0.7);
+        /* transform: translateX(-100%) scale(0.7); */
     }
 
     50% {
         opacity: 1;
-        transform: translateX(-60%) scale(1);
+        /* transform: translateX(-60%) scale(1); */
     }
 
     85% {
         opacity: 0.7;
-        transform: translateX(-25%) scale(1.2);
+        /* transform: translateX(-25%) scale(1.2); */
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0) scale(1);
+        /* transform: translateX(0) scale(1); */
     }
 }
 
@@ -130,7 +132,7 @@
 
 .contentCau p {
     font-size: 1.5rem;
-    animation: backgroundP 3s ease-in-out 1 alternate forwards;
+    animation: backgroundP 2s ease-in-out 1 alternate forwards;
     letter-spacing: 1px;
     word-spacing: 1px;
     line-height: 30px;

@@ -25,6 +25,7 @@
    width: 80%;
    font-size: 1.2rem;
    line-height: 30px;
+   text-align: justify;
 }
 
 #Explore {
@@ -41,9 +42,9 @@
    width: 150px;
    border-radius: 50%;
    padding: 2vw;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+   box-shadow: 0 0 10px rgba(255, 0, 0, 0.9);
    background-color: white;
-   border: 2px double black;
+   /* border: 2px double black; */
 }
 
 .WhyItemImage img {

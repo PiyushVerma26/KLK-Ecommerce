@@ -49,4 +49,4 @@ function updateDescription() {
 
 updateDescription();
 
-setInterval(updateDescription, 3000);
+setInterval(updateDescription, 9000);
