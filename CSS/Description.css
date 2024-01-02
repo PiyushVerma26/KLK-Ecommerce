@@ -61,9 +61,15 @@
    height: 100%;
 }
 
+@media screen and (max-width:1304px) {
+   .CompanyDes {
+      height: auto;
+   }
+}
+
 @media screen and (max-width:1024px) {
    .CompanyDes {
-      flex-direction: column;
+      flex-direction: column-reverse;
       height: auto;
       gap: 25px;
       padding: 15px;
@@ -77,6 +83,9 @@
 
    .disclamer p {
       width: 100%;
+      font-size: 1.08rem;
+      hyphens: auto;
+      text-wrap: wrap;
    }
 
    .whyChoose {
@@ -101,6 +110,7 @@
 
    #Explore {
       align-self: center;
+      margin-bottom: 20px;
    }
 
 

@@ -172,12 +172,9 @@
 }
 
 .ulList li a:hover {
-    /* color: black; */
-    /* text-shadow: 1px 1px white; */
-    /* border-bottom: 2px solid white; */
-    /* border-top: 2px solid black; */
+
     border-bottom: 3px solid black;
-    /* padding: 10px; */
+
 }
 
 .navActive {
@@ -616,7 +613,7 @@
 }
 
 #blogText h3 {
-    /* text-shadow: 1px 1px black; */
+
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -663,7 +660,7 @@
 
     #title {
         font-size: 2rem;
-        /* margin-left: 30px; */
+
     }
 
     .newLetter {
@@ -700,25 +697,6 @@
         margin-top: 10px;
         padding-top: 10px;
     }
-
-
-    /* #descrip {
-
-        line-height: 25px;
-    } */
-
-
-
-    /* #title {
-        margin-left: 20px;
-    } */
-
-    /* 
-    .youtube {
-        width: 300px;
-        height: 300px;
-
-    } */
 
     #footerCompany ul,
     #footerProduct ul,
