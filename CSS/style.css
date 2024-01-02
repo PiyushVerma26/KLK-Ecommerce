@@ -878,3 +878,70 @@
 
 
 /* **************************************************** */
+
+.whyDetails {
+    padding: 20px;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.whyDetailsCen {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.boxes {
+    border-radius: 8px;
+
+    min-height: 280px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(170, 168, 168);
+}
+
+.boxes-bg {
+    background-color: red;
+
+
+}
+
+.boxes h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.boxes p {
+    letter-spacing: 1px;
+    line-height: 23px;
+
+}
+
+@media screen and (max-width:768px) {
+    .whyDetails {
+        height: auto;
+    }
+
+    .boxes {
+        height: auto;
+
+    }
+
+    .whyDetailsCen {
+        width: 100%;
+    }
+}
