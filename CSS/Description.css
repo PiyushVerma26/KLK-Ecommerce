@@ -44,7 +44,7 @@
    padding: 2vw;
    box-shadow: 0 0 10px rgba(255, 0, 0, 0.9);
    background-color: white;
-   /* border: 2px double black; */
+
 }
 
 .WhyItemImage img {
@@ -82,6 +82,8 @@
    .whyChoose {
       height: auto;
       padding: 0%;
+      padding-bottom: 25px;
+      padding-top: 20px;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 15px;
