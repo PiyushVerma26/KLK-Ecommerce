@@ -549,7 +549,7 @@
 }
 
 .blog {
-    background-color: rgb(205, 209, 209, 0.1);
+    background-color: rgba(244, 75, 75, 0.1);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
