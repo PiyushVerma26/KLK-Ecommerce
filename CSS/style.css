@@ -2,10 +2,10 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif; */
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    /* font-family: ceraPro, serif; */
+    font-family: ceraPro, serif;
     list-style: none;
     text-decoration: none;
     cursor: pointer;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: ceraPro;
-    src: url(../Cera_Font/Cera\ Pro\ Bold.otf) format('openType');
+    src: url(../Cera_Font/Cera\ Pro\ Medium.otf) format('openType');
 }
 
 .story {
